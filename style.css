@@ -712,21 +712,15 @@ a:active {
 }
 
 
-/*
-.main-navigation li {
-	position: relative;
-	height: 56px;
-	margin-right: 35px;
-	font-size: 1rem;
-	font-weight: 400;
-	color: #333;
-}*/
 
-.nav-top-menu li {
+.main-navigation li {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #333;
+}
+
+.nav-top-menu li {
   display: inline-block;
   padding: 15px;
   position: relative;
@@ -739,13 +733,14 @@ a:active {
 .menu-item-has-children{
 	position: static!important;
 }
+/*
 .menu-item-has-children > ul{
 	width: 100%;
 	left: 0;
 	right: 0;
 	margin:auto;
 }
-/*
+
 .main-navigation a {
 	display: block;
 	text-decoration: none;

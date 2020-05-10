@@ -1,6 +1,14 @@
 <?php
 
 class Primeur_Walker_Nav_Menu extends Walker {
+    //position du menu, default main-nav-top
+    private $position;
+    
+    function __construct( $position = '' ) {
+        //parent::__construct();
+        $this->position = $position;
+    }
+
     /**
      * What the class handles.
      *
@@ -46,8 +54,8 @@ class Primeur_Walker_Nav_Menu extends Walker {
         }
         $indent = str_repeat( $t, $depth );
  
-        // Default class.
-        $classes = array( 'sub-menu_menu' );
+        // Default class, pour le menu catégories on rajoute -left
+        $classes = (strcmp($this->position ,"left") === 0) ? array( 'sub-menu_menu-left', 'sub-menu_menu' ) : array( 'sub-menu_menu' );
  
         /**
          * Filters the CSS class(es) applied to a menu list element.

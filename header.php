@@ -72,7 +72,7 @@
 							'theme_location' => 'menu-categories',
 							'menu_id'        => 'categories-menu',
 							'menu_class' => 'nav-categories-menu',
-							'walker' => new Primeur_Walker_Nav_Menu(),
+							'walker' => new Primeur_Walker_Nav_Menu("left"),
 							)
 						);
 						?>
