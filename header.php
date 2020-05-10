@@ -69,7 +69,7 @@
 						<?php	
 						wp_nav_menu(
 							array(
-							'theme_location' => 'menu-cat',
+							'theme_location' => 'menu-categories',
 							'menu_id'        => 'categories-menu',
 							'menu_class' => 'nav-categories-menu',
 							'walker' => new Primeur_Walker_Nav_Menu(),
@@ -109,9 +109,9 @@
 					<?php
 					wp_nav_menu(
 						array(
-							'theme_location' => 'menu-1',
+							'theme_location' => 'main-menu',
 							'menu_id'        => 'primary-menu',
-							'menu_class' => 'nav navbar-nav',
+							'menu_class' => 'nav-top-menu',
 							'walker' => new Primeur_Walker_Nav_Menu(),
 						)
 					);

@@ -47,7 +47,7 @@ class Primeur_Walker_Nav_Menu extends Walker {
         $indent = str_repeat( $t, $depth );
  
         // Default class.
-        $classes = array( 'sub-menu' );
+        $classes = array( 'sub-menu_menu' );
  
         /**
          * Filters the CSS class(es) applied to a menu list element.
