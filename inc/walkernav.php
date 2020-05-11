@@ -110,6 +110,10 @@ class Primeur_Walker_Nav_Menu extends Walker {
      * @param int      $id     Current item ID.
      */
     public function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
+        // echo '<pre>';
+        // var_dump($item);
+        // echo '</pre>';
+
         if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
             $t = '';
             $n = '';
