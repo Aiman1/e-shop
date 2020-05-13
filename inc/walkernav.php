@@ -127,9 +127,9 @@ class Primeur_Walker_Nav_Menu extends Walker {
         
         $classes[] = 'menu-item-' . $item->ID;
         
-        echo '<pre>';
-        var_dump($classes);
-        echo '</pre>';
+        // echo '<pre>';
+        // var_dump($classes);
+        // echo '</pre>';
         /**
          * Filters the arguments for a single nav menu item.
          *
